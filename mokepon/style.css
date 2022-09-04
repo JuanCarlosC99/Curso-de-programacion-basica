@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+:root {
+--color1: rgb(0, 0, 0);
+--color2: rgb(61, 0, 0);
+--color3: rgb(149, 1, 1);
+--color4: rgb(255, 0, 0) ;
+}
+body{
+    font-family: 'Tourney', cursive;
+    background-color: var(--color1);
+    color: var(--color4);
+    
+}
+.titulo{ 
+    color: var(--color4);
+    font-size: 100px;
+}
+.subtitulo{
+    color: var(--color4);
+    font-size: 60px;
+}
+#seleccionar_mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tarjetas{
+    display: flex;
+}
+
+.tarjeta-mokepon{
+    display: flex;
+    justify-content: center;
+    width: 200px; 
+    height: 100px;
+    background-color:var(--color2);
+    color: var(--color4);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid;
+    border-radius: 10px;
+}
+input{
+    display: none;
+}

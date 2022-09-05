@@ -6,18 +6,23 @@
 --color4: rgb(255, 0, 0) ;
 }
 body{
-    font-family: 'Tourney', cursive;
+    
+    font-family: 'Cinzel Decorative', cursive;
     background-color: var(--color1);
     color: var(--color4);
-    
+    background-image: url('https://images2.alphacoders.com/111/111200.jpg');
+    background-size: cover;
 }
 .titulo{ 
+    font-family: 'Tourney', cursive;
     color: var(--color4);
     font-size: 100px;
+    margin: 10px;
 }
 .subtitulo{
     color: var(--color4);
     font-size: 60px;
+    margin: 10px;
 }
 #seleccionar_mascota{
     display: flex;
@@ -28,20 +33,42 @@ body{
 }
 .tarjetas{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tarjeta-mokepon{
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
     justify-content: center;
     width: 200px; 
-    height: 100px;
-    background-color:var(--color2);
+    height: 200px;
+    background-color:var(--color2); 
     color: var(--color4);
     padding: 10px;
     box-sizing: border-box;
     margin: 10px;
     border: 3px solid;
     border-radius: 10px;
+    font-size: 26px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.tarjeta-mokepon img {
+    /* width: 120px; */
+    height: 120px;
+}
+#boton_mascota{
+    border-radius: 60px;
+    width: 200px;
+    height: 080px;
+    background: transparent;
+    color: var(--color4);
+    border: 8px solid;
+    border-color: var(--color3);
+    font-size: 26px;
+    font-family: 'Cinzel Decorative', cursive;
+    margin-top: 30px;
 }
 input{
     display: none;

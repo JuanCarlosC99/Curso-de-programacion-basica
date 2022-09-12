@@ -25,7 +25,7 @@ function iniciarJuego() {
         })
     let botonTierra = document.getElementById('boton_tierra')
     botonTierra.addEventListener('click', ()=>{
-         ataqueJugador = 'TIERRA🪴'
+         ataqueJugador = 'TIERRA 🪴'
         ataqueAleatorioEnemigo()
         })
 
@@ -90,7 +90,7 @@ function combate() {
     
     if(ataqueEnemigo == ataqueJugador) {
         crearMensaje("EMPATE")
-    } else if(ataqueJugador == 'FUEGO 🔥' && ataqueEnemigo == 'TIERRA🪴') {
+    } else if(ataqueJugador == 'FUEGO 🔥' && ataqueEnemigo == 'TIERRA 🪴') {
         crearMensaje("GANASTE")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
@@ -98,7 +98,7 @@ function combate() {
         crearMensaje("GANASTE")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo
-    } else if(ataqueJugador == 'TIERRA🪴' && ataqueEnemigo == 'AGUA 💧') {
+    } else if(ataqueJugador == 'TIERRA 🪴' && ataqueEnemigo == 'AGUA 💧') {
         crearMensaje("GANASTE")
         vidasEnemigo--
         spanVidasEnemigo.innerHTML = vidasEnemigo

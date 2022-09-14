@@ -78,6 +78,9 @@ body{
 input{
     display: none;
 }
+input:checked + label{
+    background-color: var(--color3);
+}
 #seleccionar_ataque{
     flex-direction: column;
     align-items: center;
@@ -176,9 +179,8 @@ p + p{
         margin-top: 30px;
     }
     
-    input{
-        display: none;
-    }
+    
+    
     .boton_ataque , button{
         padding: 10px ;
         width:  100px;

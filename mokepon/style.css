@@ -218,3 +218,12 @@ p + p{
     }
     
 }
+
+#ver_mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mapa{
+    border: 2px solid white;
+}
